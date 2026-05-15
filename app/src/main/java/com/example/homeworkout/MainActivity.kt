@@ -11,7 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.homeworkout.ui.theme.HomeWorkoutTheme
+import com.example.theme.theme.HomeWorkoutTheme
+import com.example.theme.theme.WorkoutTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +25,7 @@ class MainActivity : ComponentActivity() {
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
+
                 }
             }
         }
@@ -34,7 +36,8 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
-        modifier = modifier
+        modifier = modifier,
+        color = WorkoutTheme.colors.primary
     )
 }
 
