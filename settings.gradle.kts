@@ -22,3 +22,5 @@ dependencyResolutionManagement {
 rootProject.name = "HomeWorkout"
 include(":app")
 include(":core:theme")
+include(":core:data")
+include(":core:domain")
